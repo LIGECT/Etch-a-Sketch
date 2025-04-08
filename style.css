@@ -1,0 +1,22 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vh;
+  height: 100vh;
+}
+
+.grid-item {
+  width: calc(100% / 16);
+  height: calc(100% / 16);
+  border: 1px solid red;
+}
