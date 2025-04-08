@@ -12,11 +12,7 @@ applyHoverEffectToGrid();
 
 let overGritItem = document.querySelectorAll(".grid-item");
 
-overGritItem.forEach((hoverEffect) => {
-  hoverEffect.addEventListener("mouseover", () => {
-    hoverEffect.style.backgroundColor = randomColor();
-  });
-});
+applyHoverEffectToGrid();
 
 let resizeButton = document.querySelector("#resize-button");
 
@@ -45,13 +41,7 @@ resizeButton.addEventListener("click", () => {
     alert("Ввод отменен");
   }
 
-  const allNewGridItems = document.querySelectorAll(".grid-item");
-
-  allNewGridItems.forEach((item) => {
-    item.addEventListener("mouseover", () => {
-      item.style.backgroundColor = randomColor();
-    });
-  });
+  applyHoverEffectToGrid();
 });
 
 function randomColor() {
