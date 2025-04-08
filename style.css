@@ -11,12 +11,26 @@ html {
 #container {
   display: flex;
   flex-wrap: wrap;
-  width: 100vh;
-  height: 100vh;
+  width: min(90vw, 90vh);
+  height: min(90vw, 90vh);
+  border: 1px solid #add8e6;
+}
+
+#resize-button {
+  background-color: transparent;
+  border: 2px solid #007bff;
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#resize-button:hover {
+  background-color: #007bff;
+  color: white;
 }
 
 .grid-item {
-  width: calc(100% / 16);
-  height: calc(100% / 16);
-  border: 1px solid red;
+  opacity: 1;
 }
